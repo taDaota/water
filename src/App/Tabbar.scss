@@ -1,33 +1,38 @@
-.tabbar {
+.tabbar
+{
   display: flex;
-  justify-content: center; // Aligns container centrally if there is extra space along the main axis
-  align-items: center; // Aligns container centrally along the cross axis
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  padding-right: 18px; // You might want to adjust this if it causes alignment issues
+  padding-right: 18px;
 
-  ul {
+  ul
+  {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between; // Distributes space evenly between items
     width: 100%;
 
-    li {
-      // width: 20%; // You might not need this if you're using space-between
+    li
+    {
+      width: 20%;
       text-align: center;
-      flex-grow: 1; // Allows items to grow and take equal space
     }
 
-    a {
+    a
+    {
       color: rgb(153, 153, 153);
       text-decoration: none;
 
-      .icon {
+      .icon
+      {
         line-height: 20px;
       }
 
-      .text {
+      .text
+      {
         font-size: 10px;
       }
     }
