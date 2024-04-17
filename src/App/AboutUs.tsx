@@ -15,20 +15,20 @@ const Content = () => {
       <div className="container">
         <div className="branding">
           <div className="image"><img src={`${process.env.PUBLIC_URL}/icon-pwamap.svg`} alt=""/></div>
-          <div className="logo">Geolonia PWAマップ</div>
+          <div className="logo">京都市文化財マネージャー講座</div>
         </div>
 
-        <p>Geolonia PWAマップは、Google スプレッドシートを更新するだけでオリジナルの地図アプリを作成することができます。</p>
-        <p>プログラムはオープンソースで公開しているため、自由にカスタマイズしてご利用いただけます。</p>
+        <p>京都市文化財マネージャー育成講座とは、歴史的建造物の調査や保存・活用とそれを生かしたまちづくりについて、講義と演習、修了課題で実践的に学ぶ講座です。</p>
+        <p>約６か月にわたり合計14日間、座学と現場研修が行われ、修了者は、京都市文化財マネージャー等へ登録することができます。</p>
 
-        <h2> 京都地下水MAP</h2>
+        <h2> 京都モダン建築祭</h2>
+        <p><a href="https://kyoto.kenchikusai.jp/" target='_blank' rel="noreferrer">https://kyoto.kenchikusai.jp/</a></p>
+
+        <p>京都モダン建築祭は、時代を経て守られてきた京都のモダン建築を一般公開するイベントで、これらの建物が生きた文化財として未来に受け継がれることを目指しています。このイベントは、変化する都市景観の中で重要な建築を祝うために、2022年に京都市と民間団体が連携して始めたものです。</p>
+
+        <h2>京都地下水MAP</h2>
         <p><a href="https://blog.kanko.jp/kyoto-sightseeing/kyoto-water" target='_blank' rel="noreferrer">https://blog.kanko.jp/kyoto-sightseeing/kyoto-water</a></p>
-
-        <p>また、独自ドメインでの利用やデザインのカスタマイズや利用に必要な緯度・経度情報の提供も有償で別途承ります。ご希望の方は下記までお問い合わせください。</p>
-
-        <h2>お問い合わせフォーム</h2>
-        <p><a href="https://geolonia.com/contact/" target='_blank' rel="noreferrer">https://geolonia.com/contact/</a></p>
-        <p>※カスタマイズおよびアプリの作成・利用についてはサポート対象外となります。あらかじめご了承ください。</p>
+        <p>※京都市には数千の井戸があるといわれています。ここでは水質検査済み箇所のみ記載しています。</p>
 
         {config.form_url?
           <>
