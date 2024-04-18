@@ -90,7 +90,7 @@ const Content = (props: Props) => {
               data-navigation-control="off"
             ></div>
 
-            <p><a className="small" href={`https://www.google.com/maps/dir/?api=1&destination=${shop['緯度']},${shop['経度']}`} target="_blank">Google Mapsで開く</a></p>
+            <a className="small" href={`https://www.google.com/maps/dir/?api=1&destination=${shop['緯度']},${shop['経度']}`} target="_blank" rel="noopener noreferrer">スポットまでの道順</a>
 
           </>
           :
