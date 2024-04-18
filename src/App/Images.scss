@@ -1,40 +1,32 @@
 .head {
   padding: 0 16px;
-  background-color: var(--primary-color);;
+  background-color: var(--primary-color); /* 余計なセミコロンを削除 */
   box-sizing: border-box;
   height: 44px;
   text-align: right;
 }
 
-.images
-{
+.images {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 44px); /* ヘッダーの高さを引いて計算 */
   box-sizing: border-box;
-  overflow: scroll;
-  /* IE, Edge 対応 */
-  -ms-overflow-style: none;
-  /* Firefox 対応 */
-  scrollbar-width: none;
+  overflow: auto; /* スクロールを自動で表示 */
+  -ms-overflow-style: none; /* IE, Edge 対応 */
+  scrollbar-width: none; /* Firefox 対応 */
 
-  &::-webkit-scrollbar
-  {
-    display: none;
+  &::-webkit-scrollbar {
+    display: none; /* スクロールバーを非表示にする */
   }
 
-  .container
-  {
+  .container {
     margin: 0;
     padding: 10px;
     padding-bottom: 20px;
-    overflow: scroll;
-    /* IE, Edge 対応 */
-    -ms-overflow-style: none;
-    /* Firefox 対応 */
-    scrollbar-width: none;
+    overflow: auto; /* スクロールを自動で表示 */
+    -ms-overflow-style: none; /* IE, Edge 対応 */
+    scrollbar-width: none; /* Firefox 対応 */
 
-    &::-webkit-scrollbar
-    {
+    &::-webkit-scrollbar {
       display: none;
     }
 
@@ -42,23 +34,17 @@
       background-color: #ffffff;
     }
 
-    #mui-image-list
-    {
-      /* IE, Edge 対応 */
-      -ms-overflow-style: none;
-      /* Firefox 対応 */
-      scrollbar-width: none;
+    #mui-image-list {
+      -ms-overflow-style: none; /* IE, Edge 対応 */
+      scrollbar-width: none; /* Firefox 対応 */
 
-      &::-webkit-scrollbar
-      {
+      &::-webkit-scrollbar {
         display: none;
       }
 
-      .mui-image-list-item
-      {
+      .mui-image-list-item {
         overflow: hidden;
       }
     }
   }
-
 }
