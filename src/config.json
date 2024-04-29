@@ -3,7 +3,7 @@
   "description": "MAP",
   "form_url": "",
   "logo_image_url": "https://tadaota.github.io/icon-water.svg",
-  "background_image_url": "https://geoloniamaps.github.io/pwamap/geolonia_bgimage_1920_1080.png",
+  "background_image_url": "https://tadaota.github.io/icon-water.svg",
   "primary_color": "#277edb",
   "orderby": "distance"
 }
