@@ -26,9 +26,8 @@ const Content = () => {
 
         <p>京都モダン建築祭は、時代を経て守られてきた京都のモダン建築を一般公開するイベントで、これらの建物が生きた文化財として未来に受け継がれることを目指しています。このイベントは、変化する都市景観の中で重要な建築を祝うために、2022年に京都市と民間団体が連携して始めたものです。</p>
 
-        <h2>京都地下水MAP</h2>
-        <p><a href="https://blog.kanko.jp/kyoto-sightseeing/kyoto-water" target='_blank' rel="noreferrer">https://blog.kanko.jp/kyoto-sightseeing/kyoto-water</a></p>
-        <p>※京都市には数千の井戸があるといわれています。ここでは水質検査済み箇所のみ記載しています。</p>
+        <h2>京都地下水MAP</h2>      
+        <p>※京都市には数千の井戸があるといわれています。水質検査済み箇所のみ記載しています。</p>
 
         {config.form_url?
           <>
