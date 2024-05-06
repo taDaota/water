@@ -11,8 +11,8 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron:  '*/10 * * * *'
-    # 10分ごとに実行
+    - cron: '0 0 * * *'
+    # 毎日の正午に実行
 
 permissions:
   contents: write
