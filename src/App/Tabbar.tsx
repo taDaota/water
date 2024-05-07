@@ -14,7 +14,7 @@ const Content = () => {
         <li><Link to="/category"><div className="icon"><FaSearch /></div><div className="text">エリア検索</div></Link></li>
         {/* コメントアウトされた部分 */}
         {/* <li><Link to="/images"><div className="icon"><FaCamera /></div><div className="text">写真</div></Link></li> */}
-        <li><Link to="/about"><div className="icon"><AiOutlineAppstore /></div><div className="text">操作について</div></Link></li>
+        <li><Link to="/about"><div className="icon"><AiOutlineAppstore /></div><div className="text">MAPについて</div></Link></li>
       </ul>
     </div>
   );
