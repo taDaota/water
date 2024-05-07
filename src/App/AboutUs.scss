@@ -1,5 +1,4 @@
-.about-us
-{
+.about-us {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -10,47 +9,53 @@
   /* Firefox 対応 */
   scrollbar-width: none;
 
-  &::-webkit-scrollbar
-  {
+  &::-webkit-scrollbar {
     display: none;
   }
 
-  .container
-  {
+  .container {
     margin: 0;
     padding: 0;
     padding-bottom: 50px;
-    a
-    {
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
       word-break: break-all;
     }
   }
 
-  .branding
-  {
+  .branding {
+    display: flex;
+    align-items: center;
     margin-bottom: 40px;
-    .logo
-    {
-      font-size: 28px;
+    .logo {
+      font-size: 28px; // 増加
+      font-weight: bold; // 追加
+    }
+    .image img {
+      width: 100px; // 新規追加
+      margin-right: 15px; // 新規追加
     }
   }
 
-  p
-  {
+  p {
     font-size: 1rem;
+    line-height: 1.5; // 行間を追加
     margin-bottom: 1rem;
   }
 
-  h2
-  {
-    font-size: 1.4rem;
+  h2 {
+    font-size: 1.5rem; // サイズを少し大きく
+    color: #333; // 色を追加
+    margin-top: 30px; // 上余白を追加
     margin-bottom: 1rem;
   }
 
-  .goto-form
-  {
-    button
-    {
+  .goto-form {
+    button {
       position: absolute;
       bottom: calc(32px + env(safe-area-inset-bottom));
       left: 50%;
@@ -58,20 +63,24 @@
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       z-index: 99999;
-      background-color: #007bff;
+      background-color: #007BFF; // 青色をはっきり
       border: none;
-      padding: 8px;
-      border-radius: 100%;
-      border: 2px solid transparent;
+      color: white; // ボタン内文字色を白に
+      padding: 12px 24px; // パディングを調整
+      font-size: 16px; // フォントサイズを大きく
+      border-radius: 5px; // 角の丸みを調整
       display: block;
       box-sizing: border-box;
       cursor: pointer;
 
-      svg
-      {
+      svg {
         display: block;
         width: 24px;
         height: 24px;
+      }
+
+      &:hover {
+        background-color: #0056b3; // ホバー時の背景色を濃い青に
       }
     }
   }
