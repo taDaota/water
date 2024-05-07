@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Tabbar.scss'
 
-import { FaList, FaHome, FaSearch, FaCamera } from "react-icons/fa"
+import { FaList, FaHome, FaSearch } from "react-icons/fa"
 import { AiOutlineAppstore } from "react-icons/ai"
 
 const Content = () => {
@@ -12,8 +12,9 @@ const Content = () => {
         <li><Link to="/"><div className="icon"><FaHome /></div><div className="text">MAP</div></Link></li>
         <li><Link to="/list"><div className="icon"><FaList /></div><div className="text">一覧</div></Link></li>
         <li><Link to="/category"><div className="icon"><FaSearch /></div><div className="text">カテゴリ</div></Link></li>
+        {/* コメントアウトされた部分 */}
         {/* <li><Link to="/images"><div className="icon"><FaCamera /></div><div className="text">写真</div></Link></li> */}
-        <li><Link to="/about"><div className="icon"><AiOutlineAppstore /></div><div className="text">MAPについて</div></Link></li>
+        <li><Link to="/about"><div className="icon"><AiOutlineAppstore /></div><div className="text">操作について</div></Link></li>
       </ul>
     </div>
   );
