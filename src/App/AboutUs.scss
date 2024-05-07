@@ -33,26 +33,28 @@
       text-align: center;
       margin-bottom: 40px;
       .logo {
-        font-size: 28px; // 増加
-        font-weight: bold; // 追加
+        font-size: 28px; // フォントサイズ
+        font-weight: bold; // フォントウェイト
         margin-top: 10px;
+        color: #32a1ce; // 涼しげな色（水色）
       }
       .image img {
-        width: 100px; // 新規追加
+        width: 200px; // 画像サイズを2倍に
+        height: auto; // アスペクト比を維持
       }
     }
   }
 
   p {
     font-size: 1rem;
-    line-height: 1.5; // 行間を追加
+    line-height: 1.5; // 行間
     margin-bottom: 1rem;
   }
 
   h2, h3 {
-    font-size: 1.5rem; // サイズを少し大きく
-    color: #333; // 色を追加
-    margin-top: 30px; // 上余白を追加
+    font-size: 1.5rem; // サイズ
+    color: #333; // 色
+    margin-top: 30px; // 上余白
     margin-bottom: 1rem;
   }
 
@@ -68,9 +70,9 @@
       background-color: #007BFF; // 青色をはっきり
       border: none;
       color: white; // ボタン内文字色を白に
-      padding: 12px 24px; // パディングを調整
-      font-size: 16px; // フォントサイズを大きく
-      border-radius: 5px; // 角の丸みを調整
+      padding: 12px 24px; // パディング
+      font-size: 16px; // フォントサイズ
+      border-radius: 5px; // 角の丸み
       display: block;
       box-sizing: border-box;
       cursor: pointer;
