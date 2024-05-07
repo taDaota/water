@@ -1,5 +1,4 @@
-.tabbar
-{
+.tabbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,32 +6,28 @@
   height: 130%;
   padding-right: 8px;
 
-  ul
-  {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     width: 100%;
+    justify-content: space-evenly; // アイテム間のスペースを均等に
 
-    li
-    {
-      width: 20%;
+    li {
+      width: 25%; // 4つのアイテムがある場合、各アイテムの幅を25%に設定
       text-align: center;
     }
 
-    a
-    {
+    a {
       color: rgb(153, 153, 153);
       text-decoration: none;
 
-      .icon
-      {
+      .icon {
         line-height: 25px;
       }
 
-      .text
-      {
+      .text {
         font-size: 11px;
       }
     }
