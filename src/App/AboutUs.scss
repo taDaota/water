@@ -16,7 +16,7 @@
 
   .container {
     position: relative;
-    margin: 0;
+    margin: 0 auto; // コンテナを中央に配置
     padding: 0;
     padding-bottom: 50px;
 
@@ -24,7 +24,7 @@
       position: fixed;
       top: 10px;
       right: 10px;
-      font-size: 32px; /* 元のサイズから2/3に調整 */
+      font-size: 32px; // 元のサイズから2/3に調整
       cursor: pointer;
       z-index: 1001;
     }
@@ -32,7 +32,7 @@
     .menu {
       position: fixed;
       right: 10px;
-      top: 50px; /* メニューの開始位置を少し調整 */
+      top: 50px; // メニューの開始位置を少し調整
       background-color: white;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
@@ -56,7 +56,7 @@
 
     .branding {
       text-align: center;
-      margin-bottom: 20px; /* 詰めた間隔を少し戻す */
+      margin-bottom: 20px; // 詰めた間隔を少し戻す
 
       .logo {
         font-size: 28px;
@@ -75,22 +75,24 @@
         margin-top: 5px;
 
         li {
-          font-size: 1.1rem; /* 文字を少し小さくする */
+          font-size: 1.1rem; // 文字を少し小さくする
           line-height: 1.5;
         }
       }
     }
 
     section {
-      padding: 15px 20px; /* セクションの上のパディングを適切な量に調整 */
-      margin-top: 15px; /* セクション間のマージンを調整 */
+      padding: 20px 20px; // セクションのパディングを調整
+      margin-top: 20px; // セクション間のマージンを調整
       background-color: #f9f9f9;
       border-radius: 8px;
       display: flex;
-      justify-content: center;
-      align-items: center; /* 子要素を垂直方向に中央揃え */
+      flex-direction: column;
+      align-items: center; // 内容を中央揃えにする
 
       h3 {
+        width: 100%; // 幅を100%に設定
+        text-align: center; // タイトルを中央揃えにする
         font-size: 1.25rem;
         color: #333;
         margin-bottom: 10px;
@@ -103,7 +105,7 @@
         text-align: left;
 
         li {
-          font-size: 0.9rem; /* 文字サイズを少し小さくする */
+          font-size: 0.9rem; // 文字サイズを少し小さくする
           line-height: 1.4;
         }
       }
