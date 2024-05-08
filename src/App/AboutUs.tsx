@@ -42,6 +42,7 @@ const Content = () => {
           <div className="image"><img src={imageUrl} alt="PWAMap Icon" /></div>
           <div className="logo">京都湧水マップ</div>
           <ul>
+            <li></li>
             <li>このウェブアプリは誰でも汲める京都市内の湧き水を紹介しています。</li>
             <li>Google Mapsと連携すれば経路検索機能が使えます。</li>
           </ul>
@@ -49,7 +50,7 @@ const Content = () => {
         <section id="considerations">
           <h3>湧き水についての留意点</h3>
           <ul>
-            <li>各所、一度に汲む量の上限などルールに従ってください。</li>
+            <li>各所、一度に汲む量の上限などのルールに従ってください。</li>
             <li>水質検査済み、かつ作者が複数回飲んだことがある湧き水のみを紹介しています。</li>
             <li>念のため、煮沸を勧めます。</li>
           </ul>
