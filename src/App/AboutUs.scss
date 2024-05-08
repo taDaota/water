@@ -82,12 +82,13 @@
     }
 
     section {
-      padding: 50px 20px; /* セクションの上のパディングを少し増やす */
+      padding: 15px 20px; /* セクションの上のパディングを適切な量に調整 */
       margin-top: 15px; /* セクション間のマージンを調整 */
       background-color: #f9f9f9;
       border-radius: 8px;
       display: flex;
       justify-content: center;
+      align-items: center; /* 子要素を垂直方向に中央揃え */
 
       h3 {
         font-size: 1.25rem;
