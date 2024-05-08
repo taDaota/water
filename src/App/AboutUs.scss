@@ -38,12 +38,25 @@
         font-size: 28px;
         font-weight: bold;
         margin-top: 10px;
-        color: #3269ce; // 涼しげな色（水色）
+        color: #3269ce;
       }
 
       .image img {
-        width: 300px;
-        height: auto; // アスペクト比を維持
+        width: 250px;
+        height: auto;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+        text-align: left;
+
+        li {
+          font-size: 1rem;
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
       }
     }
 
@@ -56,58 +69,25 @@
       &:first-of-type {
         margin-top: 0;
       }
-    }
 
-    p {
-      font-size: 1rem;
-      line-height: 1.5;
-      margin-bottom: 1rem;
-    }
+      h3 {
+        font-size: 1.25rem; // サイズを小さく調整
+        color: #333;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
 
-    h2, h3 {
-      font-size: 1.5rem;
-      color: #333;
-      margin-top: 30px;
-      margin-bottom: 15px;
-    }
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
 
-    .goto-form {
-      position: relative; // これを変更
-      text-align: center;
-      padding-top: 20px;
-
-      button {
-        background-color: #007BFF; // 青色をはっきり
-        border: none;
-        color: white;
-        padding: 12px 24px;
-        font-size: 16px;
-        border-radius: 5px;
-        display: inline-block; // これを変更
-        box-sizing: border-box;
-        cursor: pointer;
-
-        svg {
-          width: 24px;
-          height: 24px;
-        }
-
-        &:hover {
-          background-color: #0056b3; // ホバー時の背景色を濃い青に
+        li {
+          font-size: 0.95rem; // 文字サイズを小さくする
+          line-height: 1.4;
+          margin-bottom: 5px;
         }
       }
     }
-  }
-}
-
-// EdgeおよびIEのハックはそのまま適用
-@supports (-ms-ime-align: auto) {
-  .goto-form button {
-    bottom: 32px;
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .goto-form button {
-    bottom: 32px;
   }
 }
