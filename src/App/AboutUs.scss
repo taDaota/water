@@ -4,11 +4,11 @@
   box-sizing: border-box;
   padding: 24px;
   overflow: scroll;
-
   /* IE, Edge 対応 */
   -ms-overflow-style: none;
   /* Firefox 対応 */
   scrollbar-width: none;
+  position: relative;
 
   &::-webkit-scrollbar {
     display: none;
@@ -20,47 +20,47 @@
     padding: 0;
     padding-bottom: 50px;
 
-    .header {
-      display: flex;
-      justify-content: flex-end;
-      .hamburger {
-        font-size: 24px;
+    .hamburger {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 48px; /* ハンバーガーメニューのサイズを2倍に */
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .menu {
+      position: fixed;
+      right: 10px;
+      top: 60px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 5px;
+      z-index: 1000;
+
+      button {
+        padding: 8px 16px;
+        font-size: 1rem;
+        text-align: left;
+        width: 100%;
+        background: none;
+        border: none;
         cursor: pointer;
-      }
-      .menu {
-        position: absolute;
-        top: 30px;
-        right: 0;
-        background: #fff;
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        padding: 10px;
-        z-index: 1000;
 
-        a {
-          display: block;
-          padding: 8px 12px;
-          color: #3269ce;
-          text-decoration: none;
-
-          &:hover {
-            background-color: #f0f0f0;
-          }
+        &:hover {
+          background-color: #f0f0f0;
         }
       }
     }
 
     .branding {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 20px; /* 詰めた間隔 */
 
       .logo {
         font-size: 28px;
         font-weight: bold;
-        margin-top: 10px;
         color: #3269ce;
       }
 
@@ -72,43 +72,38 @@
       ul {
         list-style-type: none;
         padding: 0;
-        margin-top: 10px;
-        text-align: left;
+        margin-top: 5px; /* 詰めた間隔 */
 
         li {
-          font-size: 1rem;
+          font-size: 1.2rem; /* 文字を少し大きく */
           line-height: 1.5;
-          margin-bottom: 10px;
         }
       }
     }
 
     section {
-      padding: 20px;
-      margin-top: 20px;
+      padding: 10px 20px; /* 上の余白を減らす */
+      margin-top: 10px; /* 詰めた間隔 */
       background-color: #f9f9f9;
       border-radius: 8px;
-
-      &:first-of-type {
-        margin-top: 0;
-      }
+      display: flex;
+      justify-content: center;
 
       h3 {
         font-size: 1.25rem;
         color: #333;
-        margin-top: 30px;
-        margin-bottom: 15px;
+        margin-bottom: 10px; /* 詰めた間隔 */
         font-weight: bold;
       }
 
       ul {
         list-style-type: disc;
         padding-left: 20px;
+        text-align: left; /* 中央揃えから左寄せに変更 */
 
         li {
           font-size: 0.95rem;
           line-height: 1.4;
-          margin-bottom: 5px;
         }
       }
     }
