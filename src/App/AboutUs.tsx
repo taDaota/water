@@ -27,10 +27,9 @@ const Content = () => {
   };
 
   return (
-    <div className="about-us" onClick={() => setMenuOpen(false)}>
-      <div className="container" onClick={(e) => e.stopPropagation()}>
+    <div className="about-us">
+      <div className="container">
         <FaBars className="hamburger" onClick={toggleMenu} />
-        <div className="menu-label">MENU</div>
         {menuOpen && (
           <div className="menu">
             <button onClick={() => handleNavigation('branding')}>ホーム</button>
