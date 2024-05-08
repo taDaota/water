@@ -18,19 +18,26 @@ const Content = () => {
 
   const imageUrl = `${process.env.PUBLIC_URL}/icon-pwamap.svg`;
 
+  // スムーズスクロール関数
+  const handleNavigation = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    setMenuOpen(false); // Optionally close the menu after clicking
+  };
+
   return (
     <div className="about-us">
       <div className="container">
-        <div className="header">
-          <FaBars className="hamburger" onClick={toggleMenu} />
-          {menuOpen && (
-            <div className="menu">
-              <a href="#branding">ホーム</a>
-              <a href="#considerations">湧き水についての留意点</a>
-              <a href="#update">データの更新について</a>
-            </div>
-          )}
-        </div>
+        <FaBars className="hamburger" onClick={toggleMenu} />
+        {menuOpen && (
+          <div className="menu">
+            <button onClick={() => handleNavigation('branding')}>ホーム</button>
+            <button onClick={() => handleNavigation('considerations')}>湧き水についての留意点</button>
+            <button onClick={() => handleNavigation('update')}>データの更新について</button>
+          </div>
+        )}
         <div id="branding" className="branding">
           <div className="image"><img src={imageUrl} alt="PWAMap Icon" /></div>
           <div className="logo">京都湧水マップ</div>
