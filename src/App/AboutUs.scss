@@ -24,7 +24,7 @@
       position: fixed;
       top: 10px;
       right: 10px;
-      font-size: 48px; /* ハンバーガーメニューのサイズを2倍に */
+      font-size: 32px; /* 元のサイズから2/3に調整 */
       cursor: pointer;
       z-index: 1001;
     }
@@ -32,7 +32,7 @@
     .menu {
       position: fixed;
       right: 10px;
-      top: 60px;
+      top: 50px; /* メニューの開始位置を少し調整 */
       background-color: white;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
@@ -56,7 +56,7 @@
 
     .branding {
       text-align: center;
-      margin-bottom: 20px; /* 詰めた間隔 */
+      margin-bottom: 20px; /* 詰めた間隔を少し戻す */
 
       .logo {
         font-size: 28px;
@@ -72,18 +72,18 @@
       ul {
         list-style-type: none;
         padding: 0;
-        margin-top: 5px; /* 詰めた間隔 */
+        margin-top: 5px;
 
         li {
-          font-size: 1.2rem; /* 文字を少し大きく */
+          font-size: 1.1rem; /* 文字を少し小さくする */
           line-height: 1.5;
         }
       }
     }
 
     section {
-      padding: 10px 20px; /* 上の余白を減らす */
-      margin-top: 10px; /* 詰めた間隔 */
+      padding: 15px 20px; /* セクションの上のパディングを少し増やす */
+      margin-top: 15px; /* セクション間のマージンを調整 */
       background-color: #f9f9f9;
       border-radius: 8px;
       display: flex;
@@ -92,17 +92,17 @@
       h3 {
         font-size: 1.25rem;
         color: #333;
-        margin-bottom: 10px; /* 詰めた間隔 */
+        margin-bottom: 10px;
         font-weight: bold;
       }
 
       ul {
         list-style-type: disc;
         padding-left: 20px;
-        text-align: left; /* 中央揃えから左寄せに変更 */
+        text-align: left;
 
         li {
-          font-size: 0.95rem;
+          font-size: 0.9rem; /* 文字サイズを少し小さくする */
           line-height: 1.4;
         }
       }
