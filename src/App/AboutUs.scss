@@ -27,6 +27,11 @@
       font-size: 32px; // 元のサイズから2/3に調整
       cursor: pointer;
       z-index: 1001;
+      transition: transform 0.3s ease; // アニメーション効果
+
+      &:hover {
+        transform: rotate(90deg); // ホバー時の回転
+      }
     }
 
     .menu {
@@ -38,6 +43,9 @@
       border-radius: 8px;
       padding: 5px;
       z-index: 1000;
+      opacity: 1; // Ensure it's visible when active
+      visibility: visible; // Ensure it's visible when active
+      transition: opacity 0.3s ease, visibility 0.3s ease;
 
       button {
         padding: 8px 16px;
