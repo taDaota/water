@@ -35,6 +35,7 @@ const Content = () => {
             <button onClick={() => handleNavigation('branding')}>ホーム</button>
             <button onClick={() => handleNavigation('culturalEducation')}>京都市文化財マネージャー育成講座とは</button>
             <button onClick={() => handleNavigation('update')}>データの更新について</button>
+            <button onClick={() => handleNavigation('directions')}>道順の確認方法</button>
           </div>
         )}
         <div id="branding" className="branding">
@@ -47,10 +48,21 @@ const Content = () => {
         </div>
         <section id="culturalEducation">
           <h3>京都市文化財マネージャー<br/>育成講座とは</h3>
-          <p>歴史的建造物の調査や保存・活用とそれを生かしたまちづくりを、講義と演習、修了課題で実践的に学ぶ講座です。修了者は京都市文化財マネージャーへ登録し、活躍することができます。2024年度は14期生として36名を迎えました。<br/>同講座は京都市に拠点を置く認定NPO法人《古材文化の会》が主催しています。<br/><br/></p>
+          <p>歴史的建造物の調査や保存・活用とそれを生かしたまちづくりを、講義と演習、修了課題で実践的に学ぶ講座です。<br/>修了者は、京都市文化財マネージャー等へ登録することができます。</p>
+          <p>2024年度は14期生として36名を迎えました。同講座は京都市に拠点を置く認定NPO法人《古材文化の会》が主催しています。<br/><br/></p>
           <h3>古材文化の会</h3>
           <p>日本の伝統的な建築様式で使用される古材の利活用と地域活性化を目的とした活動を行っています。</p>
           <p><a href="http://www.kozai.or.jp/" target="_blank" rel="noopener noreferrer">古材文化の会ホームページ</a></p>
+        </section>
+        <section id="directions">
+          <h3>道順の確認方法</h3>
+          <p>スマホの位置情報サービスをオンにする:</p>
+          <ol>
+            <li>スマホの「設定」アプリを開きます。</li>
+            <li>「プライバシーとセキュリティ」をタップします。</li>
+            <li>「位置情報サービス」をオンにします。</li>
+            <li>湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップします。</li>
+          </ol>
         </section>
         {config.form_url && (
           <section id="update">
