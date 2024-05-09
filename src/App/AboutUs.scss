@@ -24,10 +24,9 @@
       position: fixed;
       top: 10px;
       right: 10px;
-      font-size: 64px; // ハンバーガーメニューのサイズを2倍に調整
+      font-size: 32px; // 元のサイズから2/3に調整
       cursor: pointer;
       z-index: 1001;
-      transition: none; // ホバー時の回転効果を取り除く
     }
 
     .menu {
@@ -99,6 +98,11 @@
         font-size: 1.25rem;
         color: #333;
         margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .location-instruction {
+        font-size: 0.9rem; // 文字サイズを小さくする
         font-weight: bold;
       }
 
