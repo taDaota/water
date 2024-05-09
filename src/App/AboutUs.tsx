@@ -57,12 +57,12 @@ const Content = () => {
         </section>
         <section id="directions">
           <h3>道順の確認方法</h3>
-          <p className="location-instruction">スマホの位置情報サービスをオンにする:</p>
+          <p className="location-instruction">スマホの位置情報サービスをオンにする</p>
           <ul>
-            <li>スマホの「設定」アプリを開きます。</li>
-            <li>「プライバシーとセキュリティ」をタップします。</li>
-            <li>「位置情報サービス」をオンにします。</li>
-            <li>湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップします。</li>
+            <li>【設定】アプリを開く</li>
+            <li>【プライバシーとセキュリティ】をタップ</li>
+            <li>【位置情報サービス】をオン</li>
+            <li>湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップ</li>
           </ul>
         </section>
         {config.form_url && (
