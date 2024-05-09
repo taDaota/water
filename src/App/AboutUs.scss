@@ -1,79 +1,116 @@
-import React, { useState } from 'react';
-import './AboutUs.scss';
-import config from '../config.json';
-import { FaPlus, FaBars } from 'react-icons/fa';
+.about-us {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  overflow: scroll;
+  /* IE, Edge 対応 */
+  -ms-overflow-style: none;
+  /* Firefox 対応 */
+  scrollbar-width: none;
+  position: relative;
 
-const Content = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  .container {
+    position: relative;
+    margin: 0 auto; // コンテナを中央に配置
+    padding: 0;
+    padding-bottom: 50px;
 
-  const clickHandler = () => {
-    if (config.form_url) {
-      window.location.href = config.form_url;
+    .hamburger {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 32px; // 元のサイズから2/3に調整
+      cursor: pointer;
+      z-index: 1001;
     }
-  };
 
-  const imageUrl = `${process.env.PUBLIC_URL}/icon-pwamap.svg`;
+    .menu {
+      position: fixed;
+      right: 10px;
+      top: 50px; // メニューの開始位置を少し調整
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 5px;
+      z-index: 1000;
 
-  const handleNavigation = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      button {
+        padding: 8px 16px;
+        font-size: 1rem;
+        text-align: left;
+        width: 100%;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
     }
-    setMenuOpen(false);
-  };
 
-  return (
-    <div className="about-us">
-      <div className="container">
-        <FaBars className="hamburger" onClick={toggleMenu} />
-        {menuOpen && (
-          <div className="menu">
-            <button onClick={() => handleNavigation('branding')}>ホーム</button>
-            <button onClick={() => handleNavigation('culturalEducation')}>京都市文化財マネージャー育成講座とは</button>
-            <button onClick={() => handleNavigation('update')}>データの更新について</button>
-            <button onClick={() => handleNavigation('directions')}>道順の確認方法</button>
-          </div>
-        )}
-        <div id="branding" className="branding">
-          <div className="image"><img src={imageUrl} alt="PWAMap Icon" /></div>
-          <div className="logo">京都湧水マップ</div>
-          <ul>
-            <li>このウェブアプリは誰でも汲める京都市内の湧き水を紹介しています。</li>
-            <li>Google Mapsと連携すれば経路検索機能が使えます。</li>
-          </ul>
-        </div>
-        <section id="culturalEducation">
-          <h3>京都市文化財マネージャー<br/>育成講座とは</h3>
-          <p>歴史的建造物の調査や保存・活用とそれを生かしたまちづくりを、講義と演習、修了課題で実践的に学ぶ講座です。<br/>修了者は、京都市文化財マネージャー等へ登録することができます。</p>
-          <p>2024年度は14期生として36名を迎えました。同講座は京都市に拠点を置く認定NPO法人《古材文化の会》が主催しています。<br/><br/></p>
-          <h3>古材文化の会</h3>
-          <p>日本の伝統的な建築様式で使用される古材の利活用と地域活性化を目的とした活動を行っています。</p>
-          <p><a href="http://www.kozai.or.jp/" target="_blank" rel="noopener noreferrer">古材文化の会ホームページ</a></p>
-        </section>
-        <section id="directions">
-          <h3>道順の確認方法</h3>
-          <p>スマホの位置情報サービスをオンにする:</p>
-          <ol>
-            <li>スマホの「設定」アプリを開きます。</li>
-            <li>「プライバシーとセキュリティ」をタップします。</li>
-            <li>「位置情報サービス」をオンにします。</li>
-            <li>湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップします。</li>
-          </ol>
-        </section>
-        {config.form_url && (
-          <section id="update">
-            <h2>データの更新について</h2>
-            <p>このアプリのデータを更新するには下の「 + 」ボタンを押してフォームに必要な情報を入力してください。</p>
-            <div className="goto-form"><button onClick={clickHandler}><FaPlus color="#FFFFFF" /></button></div>
-          </section>
-        )}
-      </div>
-    </div>
-  );
-};
+    .branding {
+      text-align: center;
+      margin-bottom: 50px; // 詰めた間隔を少し戻す
 
-export default Content;
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #3269ce;
+      }
+
+      .image img {
+        width: 250px;
+        height: auto;
+      }
+
+      ul {
+        margin-top: 0;
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+
+        li {
+          font-size: 1.1rem; // 文字を少し小さくする
+          line-height: 1.5;
+          text-align: left;
+        }
+      }
+    }
+
+    section {
+      padding: 20px 20px; // セクションのパディングを調整
+      margin-top: 20px; // セクション間のマージンを調整
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; // 内容を中央揃えにする
+
+      h3 {
+        width: 100%; // 幅を100%に設定
+        text-align: center; // タイトルを中央揃えにする
+        font-size: 1.25rem;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        text-align: left;
+
+        li {
+          font-size: 1.1rem; // 文字サイズを少し小さくする
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}
