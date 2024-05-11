@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './AboutUs.scss';
-import config from '../config.json';
-import { FaPlus, FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa'; // 不要なimportを削除
 
 const Content = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +23,7 @@ const Content = () => {
     <div className="about-us">
       <div className="container">
         <div className="hamburger" onClick={toggleMenu}>
-          {menuOpen ? <FaTimes /> : <FaBars />}  {/* ハンバーガーメニューのアイコンを切り替え */}
+          {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
         {menuOpen && (
           <div className="menu">
@@ -50,12 +49,12 @@ const Content = () => {
         </section>
         <section id="directions">
           <h3>道順の確認方法</h3>
-          <p className="location-instruction">スマホの位置情報サービスをオンにする:</p>
+          <p className="location-instruction">スマホの位置情報サービスをオンにする</p>
           <ul>
-            <li>スマホの「設定」アプリを開きます。</li>
-            <li>「プライバシーとセキュリティ」をタップします。</li>
-            <li>「位置情報サービス」をオンにします。</li>
-            <li>湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップします。</li>
+            <li>【設定】アプリを開く</li>
+            <li>【プライバシーとセキュリティ】をタップ</li>
+            <li>【位置情報サービス】をオン</li>
+            <li>湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップ</li>
           </ul>
         </section>
       </div>
