@@ -44,17 +44,17 @@ const Content = () => {
           <h3>京都市文化財マネージャー<br/>育成講座とは</h3>
           <p>歴史的建造物の調査や保存・活用とそれを生かしたまちづくりを、講義と演習、修了課題で実践的に学ぶ講座です。修了者は京都市文化財マネージャーへ登録し、活躍することができます。2024年度は14期生として36名を迎えました。</p>
           <h3>古材文化の会</h3>
-          <p>日本の伝統的な建築様式で使用される古材の利活用と地域活性化を目的とした活動を行っています。</p>
+          <p>日本の伝統的な木造建築文化の継承と発展を目指し、木材や古材の利活用と地域活性化を目的とした活動を行っています。</p>
           <p><a href="http://www.kozai.or.jp/" target="_blank" rel="noopener noreferrer">古材文化の会ホームページ</a></p>
         </section>
-        <section id="directions">
+                <section id="directions">
           <h3>道順の確認方法</h3>
-          <p className="location-instruction">スマホの位置情報サービスをオンにする</p>
+          <p className="location-instruction">スマホで現在位置を表示する</p>
           <ul>
-            <li>【設定】アプリを開く</li>
-            <li>【プライバシーとセキュリティ】をタップ</li>
-            <li>【位置情報サービス】をオン</li>
-            <li>湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップ</li>
+            <li className="small-text">【設定】アプリを開く</li>
+            <li className="small-text">【プライバシーとセキュリティ】をタップ</li>
+            <li className="small-text">【位置情報サービス】をオン</li>
+            <li className="small-text">湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップ</li>
           </ul>
         </section>
       </div>
