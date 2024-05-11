@@ -76,7 +76,7 @@
         text-align: left;
 
         li {
-          font-size: 1.1rem; // 文字を少し小さくする
+          font-size: 0.95rem; // 文字サイズを少し小さくする
           line-height: 1.5;
           text-align: left;
         }
@@ -102,7 +102,7 @@
       }
 
       .location-instruction {
-        font-size: 0.9rem; // 文字サイズを小さくする
+        font-size: larger; // テキストを少し大きくする
         font-weight: bold;
       }
 
@@ -112,7 +112,7 @@
         text-align: left;
 
         li {
-          font-size: 1.1rem; // 文字サイズを少し小さくする
+          font-size: 0.9rem; // リストの文字サイズを少し小さくする
           line-height: 1.4;
         }
       }
