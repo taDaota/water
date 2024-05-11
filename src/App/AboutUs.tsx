@@ -1,19 +1,13 @@
 import React, { useState } from 'react';
 import './AboutUs.scss';
 import config from '../config.json';
-import { FaPlus, FaBars, FaTimes } from 'react-icons/fa';  // FaTimesをインポート
+import { FaPlus, FaBars, FaTimes } from 'react-icons/fa';
 
 const Content = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-
-  const clickHandler = () => {
-    if (config.form_url) {
-      window.location.href = config.form_url;
-    }
   };
 
   const imageUrl = `${process.env.PUBLIC_URL}/icon-pwamap.svg`;
@@ -36,7 +30,6 @@ const Content = () => {
           <div className="menu">
             <button onClick={() => handleNavigation('branding')}>ホーム</button>
             <button onClick={() => handleNavigation('culturalEducation')}>京都市文化財マネージャー育成講座とは</button>
-            <button onClick={() => handleNavigation('update')}>データの更新について</button>
             <button onClick={() => handleNavigation('directions')}>道順の確認方法</button>
           </div>
         )}
@@ -57,21 +50,14 @@ const Content = () => {
         </section>
         <section id="directions">
           <h3>道順の確認方法</h3>
-          <p className="location-instruction">スマホの位置情報サービスをオンにする</p>
+          <p className="location-instruction">スマホの位置情報サービスをオンにする:</p>
           <ul>
-            <li>【設定】アプリを開く</li>
-            <li>【プライバシーとセキュリティ】をタップ</li>
-            <li>【位置情報サービス】をオン</li>
-            <li>湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップ</li>
+            <li>スマホの「設定」アプリを開きます。</li>
+            <li>「プライバシーとセキュリティ」をタップします。</li>
+            <li>「位置情報サービス」をオンにします。</li>
+            <li>湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップします。</li>
           </ul>
         </section>
-        {config.form_url && (
-          <section id="update">
-            <h2>データの更新について</h2>
-            <p>このアプリのデータを更新するには下の「 + 」ボタンを押してフォームに必要な情報を入力してください。</p>
-            <div className="goto-form"><button onClick={clickHandler}><FaPlus color="#FFFFFF" /></button></div>
-          </section>
-        )}
       </div>
     </div>
   );
