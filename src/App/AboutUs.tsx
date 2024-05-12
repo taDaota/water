@@ -27,7 +27,7 @@ const Content = () => {
         </div>
         {menuOpen && (
           <div className="menu">
-            <button onClick={() => handleNavigation('branding')}>ホーム</button>
+            <button onClick={() => handleNavigation('branding')}>京都湧き水マップについて</button>
             <button onClick={() => handleNavigation('culturalEducation')}>京都市文化財マネージャー育成講座とは</button>
             <button onClick={() => handleNavigation('directions')}>道順の確認方法</button>
           </div>
@@ -36,8 +36,9 @@ const Content = () => {
           <div className="image"><img src={imageUrl} alt="PWAMap Icon" /></div>
           <div className="logo">京都湧水マップ</div>
           <ul>
-            <li>このウェブアプリは誰でも汲める京都市内の湧き水を紹介しています。</li>
-            <li>Google Mapsと連携すれば経路検索機能が使えます。</li>
+            <li><br/>・誰でも汲める京都市内の湧き水を紹介するウェブアプリです。</li>
+            <li>・各所の決まりごとに従ってお水を頂きましょう。</li>
+            <li>・このマップは古材文化の会が主宰する「京都市文化財マネージャー育成講座」の課題の一環として作成されました。</li>
           </ul>
         </div>
         <section id="culturalEducation">
@@ -51,10 +52,10 @@ const Content = () => {
           <h3>道順の確認方法</h3>
           <p className="location-instruction">スマホで現在位置を表示する</p>
           <ul>
-            <li className="small-text">【設定】アプリを開く</li>
-            <li className="small-text">【プライバシーとセキュリティ】をタップ</li>
-            <li className="small-text">【位置情報サービス】をオン</li>
-            <li className="small-text">湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップ</li>
+            <li>・【設定】アプリを開く</li>
+            <li>・【プライバシーとセキュリティ】をタップ</li>
+            <li>・【位置情報サービス】をオン</li>
+            <li>・湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップ</li>
           </ul>
         </section>
       </div>
