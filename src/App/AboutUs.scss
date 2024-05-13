@@ -14,11 +14,13 @@
   }
 
   .container {
-    position: relative;
-    margin: 0 auto;
-    padding: 5px; // コンテナのパディングを全体的に5pxに設定
-    padding-bottom: 50px;
-
+    background-color: #f9f9f9; // セクションカードの背景色を設定
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // 影を付けて立体感を出す
+    border-radius: 8px; // 角の丸みを追加
+    width: auto; // 自動的に内容に合わせて幅を調整
+    max-width: calc(100% - 48px); // 全体の幅からパディング分を引く
+    padding: 20px; // 内部のパディングを設定
+ 
     .hamburger {
       position: fixed;
       top: 10px;
