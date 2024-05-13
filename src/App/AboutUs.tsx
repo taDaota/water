@@ -65,8 +65,8 @@ const Content = () => {
           <h3>アプリのように使う</h3>
           <ol>
             <li> マップをデフォルトのブラウザで開く<br/></li>
-            <li> 「共有マーク」をタップ<br/> -Safariでは画面下にある共有アイコン（四角いボックスと矢印）<br/> -ChromeやEdgeでは画面右上の三点リーダー（︙）<br/></li>
-            <li>【ホーム画面に追加】を選択 → アイコンがホーム画面に追加される<br/></li>
+            <li> 「共有マーク」をタップ(SafariとChrome)<br/> -Edgeでは三本線（≡）から共有マークを選択<br/></li>
+            <li>【ホーム画面に追加 ⊞】を選択 → アイコンがホーム画面に追加される<br/></li>
           </ol>
         </section>
         <section id="culturalEducation">
