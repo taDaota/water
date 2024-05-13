@@ -23,13 +23,13 @@
   position: fixed;
   top: 10px;
   right: 10px;
-  font-size: 50px; // これはハンバーガーメニューアイコンのサイズ
+  font-size: 45px; // これはハンバーガーメニューアイコンのサイズ
   cursor: pointer;
   z-index: 1001;
 
   svg { // svg要素（FaTimesおよびFaBarsはsvgとして描画される）
-    width: 50px; // Xマークの幅を40pxに設定
-    height: 50px; // Xマークの高さを40pxに設定
+    width: 40px; // Xマークの幅を40pxに設定
+    height: 40px; // Xマークの高さを40pxに設定
   }
 }
     .menu {
