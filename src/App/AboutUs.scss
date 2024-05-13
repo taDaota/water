@@ -4,10 +4,10 @@
   box-sizing: border-box;
   padding: 24px;
   overflow: scroll;
-  text-align: left; // デフォルトでテキストを左揃えにする
   -ms-overflow-style: none; // IE, Edge 対応
   scrollbar-width: none; // Firefox 対応
   position: relative;
+  text-align: left;
 
   &::-webkit-scrollbar {
     display: none;
@@ -15,7 +15,7 @@
 
   .container {
     position: relative;
-    margin: 0 auto; // コンテナを中央に配置
+    margin: 0 auto;
     padding: 0;
     padding-bottom: 50px;
 
@@ -23,7 +23,7 @@
       position: fixed;
       top: 10px;
       right: 10px;
-      font-size: 32px; // 元のサイズから2/3に調整
+      font-size: 32px;
       cursor: pointer;
       z-index: 1001;
     }
@@ -31,7 +31,7 @@
     .menu {
       position: fixed;
       right: 10px;
-      top: 50px; // メニューの開始位置を少し調整
+      top: 50px;
       background-color: white;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
@@ -41,7 +41,7 @@
       button {
         padding: 8px 16px;
         font-size: 1rem;
-        text-align: left; // ボタンのテキストも左揃え
+        text-align: left;
         width: 100%;
         background: none;
         border: none;
@@ -54,8 +54,8 @@
     }
 
     .branding {
-      text-align: center; // ブランディング部分全体は中央揃えにする
-      margin-bottom: 50px; // 詰めた間隔を少し戻す
+      text-align: center;
+      margin-bottom: 50px;
 
       .logo {
         font-size: 28px;
@@ -72,46 +72,41 @@
         margin-top: 0;
         list-style-type: none;
         padding: 0;
-        text-align: left; // ulタグ内のテキストも左揃え
+        text-align: left;
 
         li {
-          font-size: 0.95rem; // 文字サイズを少し小さくする
+          font-size: 0.95rem;
           line-height: 1.5;
-          text-align: left; // liタグ内のテキストも左揃え
+          text-align: left;
         }
       }
     }
 
     section {
-      padding: 20px 20px; // セクションのパディングを調整
-      margin-top: 20px; // セクション間のマージンを調整
+      padding: 20px 20px;
+      margin-top: 20px;
       background-color: #f9f9f9;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
-      align-items: center; // 内容を中央揃えにする
+      align-items: center;
 
       h3 {
-        width: 100%; // 幅を100%に設定
-        text-align: center; // タイトルを中央揃えにする
+        width: 100%;
+        text-align: center;
         font-size: 1.25rem;
         color: #333;
         margin-bottom: 10px;
         font-weight: bold;
       }
 
-      .location-instruction {
-        font-size: larger; // テキストを少し大きくする
-        font-weight: bold;
-      }
-
       ul {
         list-style-type: disc;
         padding-left: 20px;
-        text-align: left; // ulタグ内のテキストも左揃え
+        text-align: left;
 
         li {
-          font-size: 0.9rem; // リストの文字サイズを少し小さくする
+          font-size: 0.9rem;
           line-height: 1.4;
         }
       }
