@@ -16,14 +16,14 @@
   .container {
     position: relative;
     margin: 0 auto;
-    padding: 0;
+    padding: 20px; // コンテナのパディングを全体的に20pxに設定
     padding-bottom: 50px;
 
     .hamburger {
       position: fixed;
       top: 10px;
       right: 10px;
-      font-size: 45px; // これはハンバーガーメニューアイコンのサイズ
+      font-size: 45px; // ハンバーガーメニューアイコンのサイズ
       cursor: pointer;
       z-index: 1001;
 
@@ -88,7 +88,7 @@
     }
 
     section {
-      padding: 20px 20px;
+      padding: 20px;
       margin-top: 20px;
       background-color: #f9f9f9;
       border-radius: 8px;
@@ -98,7 +98,7 @@
 
       h3 {
         width: 100%;
-        text-align: center; // 中央揃えを維持
+        text-align: center; // タイトルは中央揃えを維持
         font-size: 1.25rem;
         color: #333;
         margin-bottom: 10px;
