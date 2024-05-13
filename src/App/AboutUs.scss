@@ -16,7 +16,7 @@
   .container {
     position: relative;
     margin: 0 auto;
-    padding: 20px; // コンテナのパディングを全体的に20pxに設定
+    padding: 25px; // コンテナのパディングを全体的に25pxに設定
     padding-bottom: 50px;
 
     .hamburger {
@@ -88,7 +88,8 @@
     }
 
     section {
-      padding: 20px;
+      padding: 23px;
+      width: calc(100%-40px);
       margin-top: 20px;
       background-color: #f9f9f9;
       border-radius: 8px;
