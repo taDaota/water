@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './AboutUs.scss';
-import { FaBars, FaTimes } from 'react-icons/fa'; // 不要なimportを削除
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Content = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const Content = () => {
 
   const imageUrl = `${process.env.PUBLIC_URL}/icon-pwamap.svg`;
 
-  const handleNavigation = (sectionId: string) => {
+  const handleNavigation = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -38,37 +38,41 @@ const Content = () => {
           <div className="image"><img src={imageUrl} alt="PWAMap Icon" /></div>
           <div className="logo">京都湧き水マップ</div>
           <br/>
-            <p>誰でも汲める京都市内の湧き水を紹介するウェブアプリです。湧き水の各所に決まりごとがあります。ルールに従ってお水を頂きましょう。<br/></p>
-            <p><br/>このマップは古材文化の会が主宰する「京都市文化財マネージャー育成講座」の課題の一環として作成されました。</p>
-
+          <p>誰でも汲める京都市内の湧き水を紹介するウェブアプリです。各湧き水処に決まり事があります。ルールに従ってお水を頂きましょう。</p>
+          <p>このマップは古材文化の会が主宰する「京都市文化財マネージャー育成講座」の課題の一環として作成されました。</p>
+        </div>
         <section id="directions">
           <h3>道順の確認方法</h3>
-            <p>1.【設定】アプリを開く<br/></p>
-            <p>2.【プライバシーとセキュリティ】をタップ<br/></p>
-            <p>3.【位置情報サービス】をオン<br/></p>
-            <p>4. 湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップ</p>
+          <ol>
+          <li>【設定】アプリを開く<br/></li>
+          <li>【プライバシーとセキュリティ】をタップ<br/></li>
+          <li>【位置情報サービス】をオン<br/></li>
+          <li> 湧き水紹介のページ下部の「位置情報をオンにして道順を確認」をタップ</li>
+          </ol>
         </section>
-          
-        </div>
         <section id="currentLocation">
           <h3>MAPで現在位置を表示する方法</h3>
-            <p>1.【位置情報サービス】をオンにし、使用しているブラウザを選択<br/></p>
-            <p>2.【次回または共有時に確認】または【このアプリの使用中】を選択し、【正確な位置情報】トグルスイッチがオンであることを確認<br/></p>
-            <p>3. 立ち上げ画面のMAP右上にある「⛯」アイコンをタップ<br/></p>
-            <p>4. 位置情報を使用するポップアップ画面が出れば【許可】を選択<br/></p>
-            <p>5. MAPで現在位置が青●として表示されます</p>
-          </section>
-          
+          <ol>
+            <li>【位置情報サービス】をオンにし、使用しているブラウザを選択<br/></li>
+            <li>【このアプリの使用中】を選択し、【正確な位置情報】トグルスイッチがオンであることを確認<br/></li>
+            <li>立ち上げ画面のMAP右上にある「⛯」アイコンをタップ<br/></li>
+            <li>位置情報を使用するポップアップ画面が出れば【許可】を選択<br/></li>
+            <li>MAPで現在位置が表示されます<br/></li>
+          </ol>
+          <p>※【次回または共有時に確認】を選択すると「⛯」アイコンをタップしてもポップアップが出ないことがあります。その場合はアプリを再度立ち上げてください。</p>
+        </section>
         <section id="appUsage">
-            <h3>アプリのように使う</h3>
-              <p>1. マップをデフォルトのブラウザで開く<br/></p>
-              <p>2. 共有マークをタップ<br/></p>
-              <p> - Safariでは画面下にある共有アイコン（四角いボックスと矢印）をタップ<br/></p>
-              <p> - ChromeやEdgeでは画面右上の三点リーダー（︙）をタップ<br/></p>
-              <p>3.【ホーム画面に追加】を選択 → アイコンがホーム画面に追加されます<br/></p>
-          </section>
+          <h3>アプリのように使う</h3>
+          <ol>
+            <li>マップをデフォルトのブラウザで開く<br/></li>
+            <li>共有マークをタップ<br/></li>
+            <li>Safariでは画面下にある共有アイコン（四角いボックスと矢印）をタップ<br/></li>
+            <li>ChromeやEdgeでは画面右上の三点リーダー（︙）をタップ<br/></li>
+            <li>【ホーム画面に追加】を選択 → アイコンがホーム画面に追加されます<br/></li>
+          </ol>
+        </section>
         <section id="culturalEducation">
-          <h3>京都市文化財マネージャー<br/>育成講座とは</h3>
+          <h3>京都市文化財マネージャー育成講座とは</h3>
           <p>歴史的建造物の調査や保存・活用とそれを生かしたまちづくりを、講義と演習、修了課題で実践的に学ぶ講座です。修了者は京都市文化財マネージャーへ登録し、活躍することができます。2024年度は14期生として36名を迎えました。</p>
           <h3><br/>古材文化の会</h3>
           <p>日本の伝統的な木造建築文化の継承と発展を目指し、木材や古材の利活用と地域活性化を目的とした活動をしています。</p>
