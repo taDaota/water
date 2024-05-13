@@ -11,14 +11,14 @@ const Content = () => {
 
   const imageUrl = `${process.env.PUBLIC_URL}/icon-pwamap.svg`;
 
-  const handleNavigation = (sectionId) => {
+  const handleNavigation = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     setMenuOpen(false);
   };
-
+  
   return (
     <div className="about-us">
       <div className="container">
