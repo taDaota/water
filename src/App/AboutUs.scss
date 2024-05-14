@@ -89,7 +89,7 @@
 
     section {
       padding: 20px;
-      width: calc(100% - 20px); // セクションの幅を調整
+      width: calc(100% - 40px); // セクションの幅を調整
       margin-top: 15px;
       background-color: #f9f9f9;
       border-radius: 8px;
@@ -107,14 +107,28 @@
       }
 
       ul {
-        list-style-type: disc;
-        padding-left: 20px;
+        list-style-type: decimal; // 数字リストのスタイルを設定
+        padding-left: 40px; // 数字リストのインデントを設定
         text-align: left;
 
         li {
           font-size: 0.9rem;
           line-height: 1.4;
         }
+      }
+
+      .card {
+        background-color: grey; // カードの背景色を灰色に設定
+        width: 300px; // カードの幅
+        height: 200px; // カードの高さ
+        border-radius: 8px; // カードの角を丸くする
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 auto; // カードを中央に配置
       }
     }
   }
