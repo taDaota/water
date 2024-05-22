@@ -77,9 +77,8 @@
     }
 
     section {
-      padding: 20px;
+      padding: 20px 0; // セクションのパディングを上下に設定
       background-color: #fff;
-      margin-top: 15px;
       text-align: center;
       border-bottom: 1px solid #ccc; // 下線を追加して区切る
 
